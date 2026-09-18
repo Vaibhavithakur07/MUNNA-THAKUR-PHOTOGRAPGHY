@@ -1,0 +1,676 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+nav {
+    width: 100vw;
+    height:13vh;
+    background-color: black; 
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    flex-direction: row;
+    padding-top:30px;
+    align-items: center;
+    padding-right: 70px;
+    justify-content: center;
+    gap:25px;
+    margin-right:30px;
+    font-size: small;
+    position:fixed;
+}
+nav img{
+    height:7vh;
+    width:13vw;
+    margin-left:25px;
+    margin-right:180px;
+}
+nav a{
+    color:white;
+    font-family: Georgia, "Times New Roman", serif;
+    text-decoration:none;
+    margin-left:20px;
+}
+.book-btn {
+    border: 4px solid gold;
+    padding: 10px 20px;
+    color: gold;
+    border-radius:16px;
+    margin-left:430px;
+}
+
+nav a {
+    margin-left: 0;
+}
+nav a:not(.book-btn) {
+    margin-right: 80px;
+}
+.book-btn {
+    margin-left:0px;
+}
+.home-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.home-image img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover contain;
+    display: block;
+}
+.white-box {
+    width: 100%;
+    min-height: 500px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 70px 10%;
+    box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.white-box h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.white-box > p {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.photography-types {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 45px;
+}
+
+.photography-types div {
+    width: 220px;
+}
+
+.photography-types h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.photography-types p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+.portfolio-btn,
+.white-box .book-btn {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin: 5px;
+}
+.portfolio-btn {
+    background-color: gold;
+    color: black;
+}
+.white-box .book-btn {
+    border: 2px solid gold;
+    color:gold;
+}
+nav {
+    border-bottom: 1.5px solid #ffffff;
+}
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    nav {
+        width: 100%;
+        height: auto;
+        padding: 12px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    nav img {
+        width: 130px;
+        height: auto;
+        margin: 0;
+    }
+
+    nav h1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 !important;
+        font-size: 11px;
+    }
+
+    nav a:not(.book-btn) {
+        margin-right: 0 !important;
+    }
+
+    nav .book-btn {
+        margin: 0 !important;
+        padding: 7px 12px;
+        border-width: 2px;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    .white-box {
+        padding: 50px 20px;
+    }
+
+    .white-box h2 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .white-box > p {
+        font-size: 14px;
+    }
+
+    .photography-types {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .photography-types div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    nav {
+        height: 70px;
+        padding: 0 12px;
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    nav h1 {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+    nav .book-btn {
+    border: 3px solid gold;
+    padding: 8px 18px;
+    color: gold;
+    background-color: black;
+    border-radius: 15px;
+    margin: 0;
+    position: relative;
+    top: -10px;
+}    
+}
+
+/* =====================================================
+   GLOBAL MOBILE RESPONSIVE SETTINGS
+   MUNNA THAKUR PHOTOGRAPHY
+===================================================== */
+
+/* Prevent width problems */
+* {
+    box-sizing: border-box;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Images should never go outside the screen */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Videos should never go outside the screen */
+video {
+    max-width: 100%;
+}
+
+/* Make sections fit the screen */
+section,
+header,
+main,
+footer {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Every main container fits mobile width */
+
+    .container,
+    .section,
+    .content,
+    main {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* Prevent fixed desktop widths */
+
+    .container,
+    .section,
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Text should fit mobile screen */
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* Links and buttons */
+
+    button,
+    .button,
+    a {
+        max-width: 100%;
+    }
+
+
+    /* Forms */
+
+    input,
+    textarea,
+    select,
+    button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+
+    nav {
+        width: 100%;
+        height: 60px;
+        padding: 5px 8px;
+
+        display: flex;
+        align-items: center;
+
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    nav img {
+        width: 45px;
+        height: 38px;
+        object-fit: contain;
+        margin: 0 5px 0 0;
+    }
+
+    .nav-title {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+
+        background: none;
+        border: none;
+
+        color: #FFFFFF;
+
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 11px;
+
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+
+        position: absolute;
+        top: 60px;
+        right: 0;
+
+        width: 180px;
+
+        background: #000000;
+        border: 1px solid #D4AF37;
+
+        z-index: 9999;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu a {
+        color: #FFFFFF;
+        text-decoration: none;
+
+        padding: 13px 18px;
+
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 13px;
+
+        border-bottom: 1px solid #333333;
+    }
+
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+}
+.menu-btn {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 180px;
+        background: #000;
+        border: 1px solid #D4AF37;
+        z-index: 9999;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 20px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 13px;
+        border-bottom: 1px solid #333;
+    }
+
+    .mobile-menu a:hover {
+        color: #D4AF37;
+    }
+}
+/* =====================================
+   MOBILE NAVBAR FIX
+===================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        width: 100% !important;
+        height: 60px !important;
+        padding: 5px 8px !important;
+        margin: 0 !important;
+
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        position: relative !important;
+        box-sizing: border-box !important;
+
+        overflow: visible !important;
+    }
+
+    /* LOGO */
+    nav img {
+        width: 42px !important;
+        height: 40px !important;
+        margin: 0 !important;
+        flex-shrink: 0 !important;
+        object-fit: contain !important;
+    }
+
+    /* WEBSITE NAME */
+    .nav-title {
+        flex: 1 !important;
+        text-align: center !important;
+
+        font-size: 9px !important;
+        letter-spacing: 0.5px !important;
+
+        white-space: nowrap !important;
+
+        margin: 0 5px !important;
+        overflow: hidden !important;
+    }
+
+    /* HIDE DESKTOP LINKS */
+    .nav-links {
+        display: none !important;
+    }
+
+    /* MENU BUTTON */
+    .menu-btn {
+        display: block !important;
+
+        background: none !important;
+        border: none !important;
+
+        color: white !important;
+
+        font-family: Georgia, "Times New Roman", serif !important;
+        font-size: 10px !important;
+
+        padding: 5px !important;
+        margin: 0 !important;
+
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+
+        cursor: pointer !important;
+    }
+
+    /* MOBILE MENU */
+    .mobile-menu {
+        display: none;
+
+        position: absolute !important;
+        top: 60px !important;
+        right: 0 !important;
+
+        width: 170px !important;
+
+        background: #000000 !important;
+        border: 1px solid #D4AF37 !important;
+
+        z-index: 99999 !important;
+    }
+
+    .mobile-menu.active {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .mobile-menu a {
+        display: block !important;
+        width: 100% !important;
+
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+
+        font-family: Georgia, "Times New Roman", serif !important;
+        font-size: 12px !important;
+
+        padding: 12px 16px !important;
+
+        border-bottom: 1px solid #333333 !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .mobile-menu a:last-child {
+        border-bottom: none !important;
+    }
+}
+nav {
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+}
+
+.home-image,
+.home-image img {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    display: block;
+}
+@media (max-width: 768px) {
+
+    nav {
+        width: 100% !important;
+        height: 58px !important;
+        padding: 5px 5px !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        position: fixed !important;
+        top: 0 !important;
+        z-index: 9999 !important;
+    }
+
+    nav img {
+        width: 42px !important;
+        height: 38px !important;
+        margin: 0 5px 0 0 !important;
+        flex-shrink: 0 !important;
+    }
+
+    nav a {
+        font-size: 9px !important;
+        margin: 0 4px !important;
+        white-space: nowrap !important;
+    }
+
+    nav a:not(.book-btn) {
+        margin-right: 4px !important;
+    }
+
+    .book-btn {
+        font-size: 9px !important;
+        padding: 7px 10px !important;
+        border: 2px solid gold !important;
+        border-radius: 12px !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+    }
+}
+@media (max-width: 480px) {
+
+    .home-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+}

@@ -1,0 +1,532 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+nav {
+    width: 100vw;
+    height:13vh;
+    background-color: black; 
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    flex-direction: row;
+    padding-top:30px;
+    align-items: center;
+    padding-right: 70px;
+    justify-content: center;
+    gap:25px;
+    margin-right:30px;
+    font-size: small;
+    position:fixed;
+}
+
+nav img{
+    height:7vh;
+    width:13vw;
+    margin-left:25px;
+    margin-right:180px;
+}
+nav a{
+    color:white;
+    font-family: Georgia, "Times New Roman", serif;
+    text-decoration:none;
+    margin-left:20px;
+}
+.book-btn {
+    border: 4px solid gold;
+    padding: 10px 20px;
+    color: gold;
+    border-radius:16px;
+    margin-left:430px;
+}
+nav a {
+    margin-left: 0;
+}
+nav a:not(.book-btn) {
+    margin-right: 80px;
+}
+.book-btn {
+    margin-left:0px;
+}
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+.about-introduction {
+    width: 100%;
+    padding: 140px 8% 80px;
+    text-align: center;
+    background-color: #000000;
+}
+.about-introduction h1,
+.journey-section h1,
+.passion-section h1,
+.specialization-section h1,
+.approach-section h1,
+.dedication-section h1,
+.client-section h1,
+.about-cta h1 {
+    color: #D4AF37;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.about-introduction h2 {
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 55px;
+}
+.intro-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    text-align: left;
+}
+.photographer-image {
+    width: 420px;
+    height: 520px;
+    flex-shrink: 0;
+    border: 2px solid #D4AF37;
+    padding: 8px;
+    background-color: #111111;
+}
+.photographer-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.intro-text {
+    flex: 1;
+}
+.intro-text h3 {
+    color: #D4AF37;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.intro-text h4 {
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.experience {
+    display: inline-block;
+    color: #000000;
+    background-color: #D4AF37;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+.intro-text p {
+    color: #d0c7b8;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+.journey-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #111111;
+}
+.journey-section > p {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    color: #c8bba8;
+    font-size: 16px;
+}
+.journey-boxes {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.journey-box {
+    border: 1px solid #8B7355;
+    padding: 35px 25px;
+    background-color: #050505;
+    transition: 0.3s ease;
+}
+.journey-box:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+}
+.journey-box h2 {
+    color: #D4AF37;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.journey-box h3 {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+.journey-box p {
+    color: #bcae9a;
+    font-size: 15px;
+}
+.passion-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #000000;
+}
+.passion-content {
+    max-width: 850px;
+    margin: 30px auto;
+}
+.passion-content p {
+    color: #d0c7b8;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+.passion-points {
+    max-width: 1000px;
+    margin: 35px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.passion-points span {
+    color: #D4AF37;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.specialization-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #111111;
+}
+.specialization-section > h2 {
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.specialization-section > p {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    color: #c8bba8;
+    font-size: 16px;
+}
+.specialization-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+.specialization-box {
+    padding: 22px 15px;
+    border: 1px solid #8B7355;
+    color: #ffffff;
+    background-color: #050505;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+.specialization-box:hover {
+    background-color: #D4AF37;
+    color: #000000;
+    border-color: #D4AF37;
+}
+.approach-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #000000;
+}
+.approach-flow {
+    max-width: 1050px;
+    margin: 45px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.approach-flow div {
+    border: 1px solid #D4AF37;
+    padding: 18px 25px;
+    color: #D4AF37;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.approach-flow span {
+    color: #ffffff;
+    font-size: 24px;
+}
+.approach-section > p {
+    max-width: 850px;
+    margin: auto;
+    color: #c8bba8;
+    font-size: 16px;
+}
+.dedication-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #111111;
+}
+.dedication-flow {
+    max-width: 1100px;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+.dedication-flow div {
+    padding: 25px 15px;
+    border: 1px solid #8B7355;
+    background-color: #050505;
+}
+.dedication-flow h2 {
+    color: #D4AF37;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.dedication-section > p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: #c8bba8;
+    font-size: 16px;
+}
+.dedication-section > h3 {
+    max-width: 800px;
+    margin: 35px auto 0;
+    color: #D4AF37;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.client-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #000000;
+}
+.client-grid {
+    max-width: 900px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.client-box {
+    padding: 20px;
+    border: 1px solid #8B7355;
+    color: #ffffff;
+    background-color: #111111;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+.client-box:hover {
+    border-color: #D4AF37;
+    color: #D4AF37;
+}
+.about-cta {
+    padding: 90px 8%;
+    text-align: center;
+    background-color: #050505;
+    border-top: 1px solid #8B7355;
+}
+.about-cta p {
+    color: #c8bba8;
+    font-size: 17px;
+    margin: 20px auto 35px;
+}
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cta-buttons a {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #D4AF37;
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border: 1px solid #D4AF37;
+    transition: 0.3s ease;
+}
+.cta-buttons a:hover {
+    background-color: transparent;
+    color: #D4AF37;
+}
+footer {
+    padding: 45px 8%;
+    text-align: center;
+    background-color: #000000;
+    border-top: 1px solid #8B7355;
+}
+footer h2 {
+    color: #D4AF37;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+footer p {
+    color: #9f9485;
+    font-size: 13px;
+    margin: 8px 0;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+}
+.footer-links a:hover {
+    color: #D4AF37;
+}
+@media (max-width: 768px) {
+    .about-introduction,
+    .journey-section,
+    .passion-section,
+    .specialization-section,
+    .approach-section,
+    .dedication-section,
+    .client-section {
+        padding: 60px 5%;
+    }
+    .about-introduction h1,
+    .journey-section h1,
+    .passion-section h1,
+    .specialization-section h1,
+    .approach-section h1,
+    .dedication-section h1,
+    .client-section h1,
+    .about-cta h1 {
+        font-size: 26px;
+    }
+    .intro-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .photographer-image {
+        width: 100%;
+        max-width: 380px;
+        height: 470px;
+    }
+    .intro-text {
+        text-align: center;
+    }
+    .intro-text h3 {
+        font-size: 27px;
+    }
+    .journey-boxes {
+        grid-template-columns: 1fr;
+    }
+    .specialization-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dedication-flow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .client-grid {
+        grid-template-columns: 1fr;
+    }
+    .approach-flow {
+        flex-direction: column;
+    }
+    .approach-flow span {
+        transform: rotate(90deg);
+    }
+    .passion-points {
+        gap: 10px;
+    }
+    .about-cta {
+        padding: 70px 5%;
+    }
+}
+@media (max-width: 480px) {
+
+    .specialization-grid {
+        grid-template-columns: 1fr;
+    }
+    .dedication-flow {
+        grid-template-columns: 1fr;
+    }
+    .photographer-image {
+        height: 420px;
+    }
+    .intro-text p,
+    .journey-section > p,
+    .passion-content p,
+    .specialization-section > p,
+    .approach-section > p,
+    .dedication-section > p {
+        font-size: 14px;
+    }
+    .passion-points span {
+        font-size: 11px;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-buttons a {
+        width: 220px;
+        text-align: center;
+    }
+}
+nav{
+     border-bottom: 1.5px solid #ffffff;
+}
+.book-btn {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    white-space: nowrap !important;
+}
+nav h1 {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 15px !important;
+}
+
+nav h1 a {
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+nav h1 .book-btn {
+    margin: 0 !important;
+}
+nav > h1 .book-btn {
+    margin-left: -5px !important;
+}

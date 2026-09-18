@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Munaa Thakur Photography</title>
+
+    <link rel="stylesheet" href="./book now.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+        <nav>
+        <img src="logo/logo.png" alt="Munaa Thakur Photography">
+        <h1>
+            <a href="index.html">HOME</a>
+            <a href="Portfolio.html">PORTFOLIO</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Contact.html">CONTACT</a>
+            <a href="book now.html" class="book-btn">Book Now</a>
+        </h1>
+    </nav> 
+
+    <section class="booking-section">
+
+        <!-- CAMERA BACKGROUND -->
+        <img src="camera/camera.png"
+             alt="Camera Background"
+             class="camera-bg">
+
+        <div class="booking-overlay-bg"></div>
+
+
+        <div class="booking-overlay">
+
+            <h1>BOOK YOUR DATE</h1>
+
+            <h2>LET'S CAPTURE YOUR SPECIAL MOMENT</h2>
+
+            <p class="booking-intro">
+                Tell me about your special occasion and I will get back
+                to you to discuss your photography requirements.
+            </p>
+
+            <form id="bookingForm" class="booking-form">
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>FULL NAME</label>
+
+                        <input type="text"
+                               name="name"
+                               placeholder="Your Name"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>PHONE NUMBER</label>
+
+                        <input type="tel"
+                               name="phone"
+                               placeholder="Your Phone Number"
+                               required>
+
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>EMAIL ADDRESS</label>
+
+                        <input type="email"
+                               name="email"
+                               placeholder="Your Email Address"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>FUNCTION / EVENT TYPE</label>
+
+                        <select name="event" required>
+
+                            <option value="">
+                                Select Function
+                            </option>
+
+                            <option>Wedding</option>
+                            <option>Pre-Wedding</option>
+                            <option>Engagement</option>
+                            <option>Haldi</option>
+                            <option>Mehendi</option>
+                            <option>Reception</option>
+                            <option>Birthday</option>
+                            <option>Maternity</option>
+                            <option>Portrait</option>
+                            <option>Family</option>
+                            <option>Baby Shoot</option>
+                            <option>Anniversary</option>
+                            <option>Couple Shoot</option>
+                            <option>Traditional Photography</option>
+                            <option>Candid Photography</option>
+                            <option>Event Photography</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>EVENT DATE</label>
+
+                        <input type="date"
+                               name="date"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>EVENT LOCATION</label>
+
+                        <input type="text"
+                               name="location"
+                               placeholder="Location / Venue"
+                               required>
+                    </div>
+
+                </div>
+                <div class="form-group full-width">
+
+                <label>NUMBER OF GUESTS</label>
+
+                <input type="number"
+                           name="guests"
+                           placeholder="Approximate Number of Guests">
+
+                </div>
+
+                <div class="form-group full-width">
+
+                <label>PHOTOGRAPHY REQUIREMENTS</label>
+
+                    <textarea name="requirements"
+                              placeholder="Tell me about your photography requirements..."
+                              required></textarea>
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label>ADDITIONAL MESSAGE</label>
+
+                    <textarea name="message"
+                              placeholder="Any special requests or additional information..."></textarea>
+
+                </div>
+
+                <button type="submit">
+                    SEND BOOKING REQUEST
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="./book now.js"></script>
+
+</body>
+
+</html>
