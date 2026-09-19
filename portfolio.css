@@ -5,7 +5,7 @@
 }
 
 nav {
-    width: 100vw;
+    width: 70vw;
     height: 13vh;
     background-color: black;
     font-family: Georgia, "Times New Roman", serif;
@@ -294,6 +294,7 @@ nav a:not(.book-btn) {
     transition: transform 0.4s ease,
                 box-shadow 0.4s ease;
 }
+
 
 
 /* ---------- PREVIEW VIDEO ---------- */
@@ -1441,4 +1442,16 @@ header {
     justify-content: space-between;  /* logo on left, nav on right */
     align-items: center;
     width: 100%;
+}
+nav {
+    width: 100% !important;
+    height: 80px !important;
+    padding: 0 15px !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
 }
