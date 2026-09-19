@@ -573,8 +573,8 @@ nav a:hover {
     padding: 8px 16px;
     color: gold;
     border-radius: 14px;
-    font-size: 13px;
-    margin-left: 10px;
+    font-size: 8px;
+    margin-left: 6px;
 }
 
 .book-btn:hover {
@@ -601,7 +601,7 @@ nav a:hover {
     .book-btn {
         font-size: 9px;
         padding: 5px 10px;
-        margin-left: 4px;
+        margin-left: 2px;
     }
 }
 
@@ -611,7 +611,38 @@ nav a:hover {
     }
 
     .book-btn {
-        font-size: 8px;
+        font-size: 4px;
         padding: 4px 8px;
+    }
+}
+@media (max-width: 480px) {
+    nav {
+        padding: 0 10px !important;
+    }
+
+    nav a {
+        font-size: 10px !important;
+    }
+
+    .book-btn {
+        font-size: 10px !important;
+        padding: 5px 8px !important;
+        white-space: nowrap !important;
+    }
+}
+
+@media (max-width: 390px) {
+    nav a {
+        font-size: 8.5px !important;
+    }
+
+    .book-btn {
+        font-size: 8.5px !important;
+        padding: 4px 7px !important;
+    }
+
+    nav img {
+        width: 32px !important;
+        height: 30px !important;
     }
 }
