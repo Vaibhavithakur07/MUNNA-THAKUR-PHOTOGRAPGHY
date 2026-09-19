@@ -54,7 +54,7 @@ nav a:not(.book-btn) {
 }
 .home-image img {
     width: 100vw;
-    height: auto;
+    height:40vh;
     object-fit: cover contain;
     display: block;
 }
@@ -509,7 +509,7 @@ footer {
         align-items: center !important;
         justify-content: space-between !important;
 
-        position: relative !important;
+        position:fixed !important;
         box-sizing: border-box !important;
 
         overflow: visible !important;
@@ -673,4 +673,10 @@ nav {
         object-fit: contain;
     }
 
+}
+.home-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
