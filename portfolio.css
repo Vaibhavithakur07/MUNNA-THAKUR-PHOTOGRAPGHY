@@ -1428,3 +1428,17 @@ nav img {
         font-size: 10px !important;
     }
 }
+nav {
+    display: flex;
+    justify-content: flex-end;   /* pushes items to the right */
+    align-items: center;         /* vertically centers them */
+    gap: 30px;                   /* spacing between links */
+    padding: 20px 40px;
+    justify-content: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;  /* logo on left, nav on right */
+    align-items: center;
+    width: 100%;
+}
