@@ -530,3 +530,88 @@ nav h1 .book-btn {
 nav > h1 .book-btn {
     margin-left: -5px !important;
 }
+/* ============================
+   UNIFIED NAVBAR
+============================ */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1.5px solid white;
+    box-sizing: border-box;
+}
+
+nav img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 15px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+.book-btn {
+    border: 2px solid gold;
+    padding: 8px 16px;
+    color: gold;
+    border-radius: 14px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.book-btn:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* MOBILE - fit in one line */
+@media (max-width: 480px) {
+    nav {
+        height: 55px;
+        padding: 0 10px;
+    }
+
+    nav img {
+        height: 32px;
+    }
+
+    nav a {
+        font-size: 9px;
+        margin: 0 4px;
+    }
+
+    .book-btn {
+        font-size: 9px;
+        padding: 5px 10px;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 390px) {
+    nav a {
+        font-size: 8px;
+    }
+
+    .book-btn {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+}
