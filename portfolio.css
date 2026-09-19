@@ -560,3 +560,81 @@ nav a:not(.book-btn) {
     border-radius: 4px;
     border: 1px solid #D4AF37;
 }
+@media (max-width: 390px) {
+    nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    nav > h1 {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 7px;
+        white-space: nowrap;
+    }
+
+    nav > h1 a {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    nav > h1 .book-btn {
+        padding: 7px 9px !important;
+        font-size: 10px !important;
+        border: 2px solid #D4AF37 !important;
+        border-radius: 8px !important;
+        margin-left: 0 !important;
+        white-space: nowrap;
+    }
+}
+/* =====================================================
+   EXACT FIT FOR 390x844 (iPhone mini/SE size)
+===================================================== */
+@media (max-width: 390px) {
+
+    nav {
+        height: 55px !important;
+        padding: 5px 8px !important;
+    }
+
+    nav img {
+        width: 38px !important;
+        height: 35px !important;
+    }
+
+    .portfolio-section {
+        padding: 160px 15px 40px !important;
+    }
+
+    .portfolio-heading h1 {
+        font-size: 22px !important;
+    }
+
+    .portfolio-heading h2 {
+        font-size: 16px !important;
+    }
+
+    .portfolio-heading p {
+        font-size: 12px !important;
+    }
+
+    .portfolio-categories {
+        padding: 8px !important;
+        gap: 10px !important;
+    }
+
+    .portfolio-category {
+        min-height: 70px !important;
+    }
+
+    .portfolio-category h2 {
+        font-size: 15px !important;
+    }
+
+    .image-gallery img {
+        height: 140px !important;
+    }
+}
