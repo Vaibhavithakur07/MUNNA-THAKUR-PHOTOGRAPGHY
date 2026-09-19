@@ -675,8 +675,10 @@ nav {
 
 }
 .home-image img {
-    width: 100%;
+    width: auto;
     height: auto;
+    max-width: 100%;
     display: block;
-    object-fit: contain;
+    margin: 0 auto;
+    background-color: black;
 }
