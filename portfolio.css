@@ -698,6 +698,7 @@ nav {
     z-index: 1000;
     border-bottom: 1.5px solid white;
     box-sizing: border-box;
+    font-size: large;
 }
 
 nav img {
@@ -723,7 +724,7 @@ nav a:hover {
     padding: 8px 16px;
     color: gold;
     border-radius: 14px;
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 10px;
 }
 
