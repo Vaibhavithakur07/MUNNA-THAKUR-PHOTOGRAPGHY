@@ -516,7 +516,7 @@ nav h1 {
     flex-direction: row !important;
     align-items: center !important;
     flex-wrap: nowrap !important;
-    gap: 15px !important;
+    gap: 20px !important;
 }
 
 nav h1 a {
