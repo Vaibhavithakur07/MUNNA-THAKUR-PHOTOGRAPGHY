@@ -766,3 +766,33 @@ nav a:hover {
         padding: 4px 8px;
     }
 }
+.image-gallery {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.portfolio-category.active .image-gallery {
+    display: grid;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #D4AF37;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.03);
+}
+.image-gallery img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
